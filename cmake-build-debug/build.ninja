@@ -73,6 +73,39 @@ build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3
   TARGET_IMPLIB = libuntitled3.dll.a
   TARGET_PDB = untitled3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target zaj2
+
+
+#############################################
+# Order-only phony target for zaj2
+
+build cmake_object_order_depends_target_zaj2: phony || CMakeFiles/zaj2.dir
+
+build CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj: CXX_COMPILER__zaj2_Debug C$:/Users/wojte/CLionProjects/untitled3/zaj2/zaj2.cpp || cmake_object_order_depends_target_zaj2
+  DEP_FILE = CMakeFiles\zaj2.dir\zaj2\zaj2.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\zaj2.dir
+  OBJECT_FILE_DIR = CMakeFiles\zaj2.dir\zaj2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zaj2
+
+
+#############################################
+# Link the executable zaj2.exe
+
+build zaj2.exe: CXX_EXECUTABLE_LINKER__zaj2_Debug CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\zaj2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = zaj2.exe
+  TARGET_IMPLIB = libzaj2.dll.a
+  TARGET_PDB = zaj2.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build untitled3: phony untitled3.exe
 
+build zaj2: phony zaj2.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build untitled3: phony untitled3.exe
 #############################################
 # Folder: C:/Users/wojte/CLionProjects/untitled3/cmake-build-debug
 
-build all: phony untitled3.exe
+build all: phony untitled3.exe zaj2.exe
 
 # =============================================================================
 # Built-in targets
