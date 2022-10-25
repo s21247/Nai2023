@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "untitled3.exe"
+			"path" : "zaj2.exe"
 		},
 		{
-			"path" : "untitled3.pdb"
+			"path" : "zaj2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,11 +52,12 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "untitled3::@6890427a1f51a3e7e1df",
+	"id" : "zaj2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +77,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "untitled3",
-	"nameOnDisk" : "untitled3.exe",
+	"name" : "zaj2",
+	"nameOnDisk" : "zaj2.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -89,7 +90,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
 			]
 		}
 	],
@@ -98,8 +107,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "zaj2/zaj2.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "zaj3/zaj3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "zaj3/zaj3.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

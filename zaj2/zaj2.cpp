@@ -49,7 +49,7 @@ auto boothFunction = [](vector <double> v){
     return results;
 };
 
-auto ackley = [](vector<double> v) {
+auto ackleyFunction = [](vector<double> v) {
 
     double x = v.at(0);
     double y = v.at(1);
@@ -100,8 +100,8 @@ int main() {
         cin>>iteracje;
         uniform_real_distribution<> distrib_r(-5,5);
         vector<double> ackleyP0 = {distrib_r(gen),distrib_r(gen)};
-        auto result = hillClimbing(ackley,ackleyDomain,ackleyP0,distanceBetweenPoints,iteracje);
-        cout<<result <<" -> "<<ackley(result)<<endl;
+        auto result = hillClimbing(ackleyFunction, ackleyDomain, ackleyP0, distanceBetweenPoints, iteracje);
+        cout << result << " -> " << ackleyFunction(result) << endl;
     }else {
         cout << "Podaj ilosc iteracji"<<endl;
         cin>>iteracje;

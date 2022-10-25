@@ -41,39 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/wojte/CLionProjects/untitled3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target untitled3
-
-
-#############################################
-# Order-only phony target for untitled3
-
-build cmake_object_order_depends_target_untitled3: phony || CMakeFiles/untitled3.dir
-
-build CMakeFiles/untitled3.dir/main.cpp.obj: CXX_COMPILER__untitled3_Debug C$:/Users/wojte/CLionProjects/untitled3/main.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\main.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target untitled3
-
-
-#############################################
-# Link the executable untitled3.exe
-
-build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\untitled3.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = untitled3.exe
-  TARGET_IMPLIB = libuntitled3.dll.a
-  TARGET_PDB = untitled3.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target zaj2
 
 
@@ -88,6 +55,12 @@ build CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj: CXX_COMPILER__zaj2_Debug C$:/Users/
   OBJECT_DIR = CMakeFiles\zaj2.dir
   OBJECT_FILE_DIR = CMakeFiles\zaj2.dir\zaj2
 
+build CMakeFiles/zaj2.dir/zaj3/zaj3.cpp.obj: CXX_COMPILER__zaj2_Debug C$:/Users/wojte/CLionProjects/untitled3/zaj3/zaj3.cpp || cmake_object_order_depends_target_zaj2
+  DEP_FILE = CMakeFiles\zaj2.dir\zaj3\zaj3.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\zaj2.dir
+  OBJECT_FILE_DIR = CMakeFiles\zaj2.dir\zaj3
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target zaj2
@@ -96,7 +69,7 @@ build CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj: CXX_COMPILER__zaj2_Debug C$:/Users/
 #############################################
 # Link the executable zaj2.exe
 
-build zaj2.exe: CXX_EXECUTABLE_LINKER__zaj2_Debug CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj
+build zaj2.exe: CXX_EXECUTABLE_LINKER__zaj2_Debug CMakeFiles/zaj2.dir/zaj2/zaj2.cpp.obj CMakeFiles/zaj2.dir/zaj3/zaj3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\zaj2.dir
@@ -105,6 +78,39 @@ build zaj2.exe: CXX_EXECUTABLE_LINKER__zaj2_Debug CMakeFiles/zaj2.dir/zaj2/zaj2.
   TARGET_FILE = zaj2.exe
   TARGET_IMPLIB = libzaj2.dll.a
   TARGET_PDB = zaj2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zaj3
+
+
+#############################################
+# Order-only phony target for zaj3
+
+build cmake_object_order_depends_target_zaj3: phony || CMakeFiles/zaj3.dir
+
+build CMakeFiles/zaj3.dir/zaj3/zaj3.cpp.obj: CXX_COMPILER__zaj3_Debug C$:/Users/wojte/CLionProjects/untitled3/zaj3/zaj3.cpp || cmake_object_order_depends_target_zaj3
+  DEP_FILE = CMakeFiles\zaj3.dir\zaj3\zaj3.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\zaj3.dir
+  OBJECT_FILE_DIR = CMakeFiles\zaj3.dir\zaj3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zaj3
+
+
+#############################################
+# Link the executable zaj3.exe
+
+build zaj3.exe: CXX_EXECUTABLE_LINKER__zaj3_Debug CMakeFiles/zaj3.dir/zaj3/zaj3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\zaj3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = zaj3.exe
+  TARGET_IMPLIB = libzaj3.dll.a
+  TARGET_PDB = zaj3.exe.dbg
 
 
 #############################################
@@ -132,9 +138,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build untitled3: phony untitled3.exe
-
 build zaj2: phony zaj2.exe
+
+build zaj3: phony zaj3.exe
 
 # =============================================================================
 # Folder targets.
@@ -144,7 +150,7 @@ build zaj2: phony zaj2.exe
 #############################################
 # Folder: C:/Users/wojte/CLionProjects/untitled3/cmake-build-debug
 
-build all: phony untitled3.exe zaj2.exe
+build all: phony zaj2.exe zaj3.exe
 
 # =============================================================================
 # Built-in targets

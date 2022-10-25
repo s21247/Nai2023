@@ -3,5 +3,5 @@ project(untitled3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled3 main.cpp)
-add_executable(zaj2 zaj2/zaj2.cpp)
+add_executable(zaj2 zaj2/zaj2.cpp zaj3/zaj3.cpp zaj3/zaj3.h)
+add_executable(zaj3 zaj3/zaj3.cpp)
